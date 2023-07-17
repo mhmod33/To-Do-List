@@ -1,0 +1,141 @@
+body{
+    display: flex;
+    width: 1440px;
+    height: 930px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(158deg, #8C14EB 0%, rgba(121, 67, 164, 0.00) 100%);
+}
+.container{
+width: 668px;
+height: 482px;
+position: absolute;
+border-radius: 25px;
+background: #FFF;
+margin-left:30%;
+}
+h1{
+color: #141AAD;
+font-family: Inter;
+font-size: 34px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-left: 34px;
+}
+#rectangle{
+width: 557px;
+height: 70px;
+flex-shrink: 1;
+border-radius: 25px;
+background: #141AAD;
+margin-left: 32px;
+border: none;
+}
+.rectangle2{
+position: absolute;
+width: 210px;
+height: 72px;
+flex-shrink: 2;
+border-radius: 25px;
+background: #EAD0FF;
+margin-left: 402px;
+margin-top: 0px;
+border: none;
+cursor: pointer;
+}
+input::placeholder {
+color:#AEB1FD;
+font-family: Poppins;
+font-size: 34px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 34px;
+}
+input {
+color: #AEB1FD;
+height: 82px;
+font-family: Poppins;
+font-size: 34px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-left: 20px;
+}
+input:focus {
+    outline: none;
+  }
+  
+  
+h2{
+position: absolute;
+color: #141AAD;
+font-family: Poppins;
+font-size: 34px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 65px;
+margin-top: -26px;
+}
+h3{
+    position: absolute;
+color: #AEB1FD;
+font-family: Poppins;
+font-size: 34px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 39px;
+margin-top: -66px;
+}
+ul li.checked {
+  
+  text-decoration: line-through;
+  color: #616161;
+}
+ul li.checked::before{
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='41' height='41' viewBox='0 0 41 41' fill='none'><path fill-rule='evenodd' clip-rule='evenodd' d='M20.5 41C31.8218 41 41 31.8218 41 20.5C41 9.17816 31.8218 0 20.5 0C9.17816 0 0 9.17816 0 20.5C0 31.8218 9.17816 41 20.5 41ZM31.51 14.0127C31.8899 13.5929 31.8575 12.9447 31.4377 12.565C31.0179 12.1851 30.3697 12.2175 29.99 12.6373L17.7129 26.2067L10.9578 19.7585C10.5483 19.3677 9.89945 19.3827 9.50851 19.7922C9.11768 20.2017 9.13275 20.8505 9.54224 21.2415L17.059 28.4165L17.8204 29.1433L18.5268 28.3627L31.51 14.0127Z' fill='%23141AAD'/></svg>");
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 45px;
+    margin-top: 29px;
+    font-family: 'Poppins', sans-serif;
+    color: #4F4545;
+    display: flex;
+    align-items: center; /* Center the child elements vertically */
+    position: relative; /* Add relative positioning to the li element */
+  }
+  
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 41px;
+    width: 41px;
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' width='41' height='41' viewBox='0 0 41 41' fill='none'><circle cx='20.5' cy='20.5' r='19.5' stroke='%23616161' stroke-width='2'/></svg>");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -45px;
+    margin-top: 4px;
+}         
+ul li span {
+    width: 24px;
+    height: 24px;
+    color: #616161;
+    text-align: center;
+    cursor: pointer;
+    position: absolute; /* Position the span absolutely within the li element */
+    right: 50px; /* Adjust the right property to position the span */
+    top: 50%; /* Adjust the top property to vertically center the span */
+    transform: translateY(-50%); /* Vertically center the span */
+  }
