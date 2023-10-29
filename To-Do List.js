@@ -1,11 +1,16 @@
+// get elements to work on
+
 const inputbox = document.getElementById("rectangle");
 const list = document.getElementById("list");
 
+// the main function to add a task 
 function addtask() {
-  if (inputbox.value === "") {
+  // Showing alert when the input field contains only spaces
+  if (/^\s*$/.test(inputbox.value)) {
     alert("You must type something!");
   } else {
     let li = document.createElement("li");
+    // asign the value of the inputbox to the li element
     li.innerHTML = inputbox.value;
     
     let span = document.createElement("span");
@@ -22,6 +27,8 @@ function addtask() {
   
   inputbox.value = "";
 }
+
+// function of adding event listener 
 list.addEventListener("click", function(e) {
 if (e.target.tagName==="LI") {
   e.target.classList.toggle("checked"); 
@@ -30,12 +37,3 @@ else if(e.target.tagName==="SPAN"){
 e.target.parentElement.remove();
 }
 },false);
-function saveData(){
-  localStorage.setItem("data",list.innerHTML);
-}
-function showTask(){
-  list.innerHTML=localStorage.getItem("data");
-}
-window.onload = function() {
-  showTask();
-}
